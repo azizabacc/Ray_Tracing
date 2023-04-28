@@ -1,0 +1,9 @@
+from view import create_wall
+import matplotlib.pyplot as plt
+wall_list = create_wall()
+
+#for i in range(0,len(wall_list)):
+for i in range(0,len(wall_list)):
+    print(wall_list[i].point_list[0],wall_list[i].point_list[1])
+    plt.plot([wall_list[i].point_list[0][0],wall_list[i].point_list[1][0]],[wall_list[i].point_list[0][1],wall_list[i].point_list[1][1]],'black')
+plt.show()
